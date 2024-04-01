@@ -7,18 +7,39 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-    <nav class="navigation">
-        <img src="/images/Education-rafiki.png" alt="Logo" height='80'  width='80' class="logo">
+   
+      <header>
+        <div class="navbar">
+          <div class="logo"><img src='images/Education-rafiki.png' height="20" width="20"></div>
+          <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+          <nav class="nav-links">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    
+      <nav class="vertical-nav" id="verticalNav">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Teachers</a></li>
-          <li><a href="#">Course</a></li>
-          <li><a href="#">Review</a></li>
-         
+          <!-- Menu items will be dynamically added here -->
         </ul>
       </nav>
+      <script>function toggleMenu() {
+        var verticalNav = document.getElementById('verticalNav');
+        var navLinks = document.querySelector('.nav-links ul');
+        var clonedMenu = navLinks.cloneNode(true);
+        verticalNav.innerHTML = '';
+        verticalNav.appendChild(clonedMenu);
+        if (verticalNav.style.display === 'block') {
+          verticalNav.style.display = 'none';
+        } else {
+          verticalNav.style.display = 'block';
+        }
+      }</script> 
     </header>
 
     <main>

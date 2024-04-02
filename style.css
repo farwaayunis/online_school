@@ -187,7 +187,11 @@ border-radius: 800px 800px 0 0;
   height: 200px;
   background-color: black;
   color: white;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   margin: 20px;
   padding: 20px;
   transition: background-color 0.3s, color 0.3s;
@@ -206,7 +210,7 @@ border-radius: 800px 800px 0 0;
 
 .card:hover {
   background-color: gold;
-  color: white;
+  color: black;
 }
 /* Circular Icon Background Color */
 .icon-circle {

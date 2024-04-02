@@ -54,27 +54,40 @@
       <h1 >Your Heading</h1>
       <p>Lorem ipsum dolor, sit amet consectetur
            adipisicing elit. Placeat distinctio nobis cum ut at corrupti quae adipisci animi dicta similique.</p>
-      <a href="#" class="discover-button">Discover More</a></div>
+      <a href="#" class="discover-button" onclick="runTransition()"  id="">Discover More</a></div>
+     <script>function runTransition() {
+        var button = document.querySelector('.discover-button');
+        button.classList.add('animate-once');
+    
+        // After the animation completes, remove the class to enable it again
+        button.addEventListener('animationend', function() {
+            button.classList.remove('animate-once');
+        }, { once: true }); // Ensures the event listener is removed after it's triggered once
+    }
+  </script> 
 
       <div class="semi-circle"></div>
         
     </main>
-<div class="flexible">
-      <div class="card">
-        <h3>Trending Courses</h3>
-       <p> Lorem ipsum dolor sit amet consectetur 
-        adipisicing elit. Velit accusamus ipsam omnis obcaecati perspiciatis aperiam nulla officia voluptatibus error corrupti!</p>
-      </div>
-      <div class="card">
-        <h3>Free trials</h3>
-       <p> Lorem ipsum dolor sit amet consectetur 
-        adipisicing elit. Velit accusamus ipsam omnis obcaecati perspiciatis aperiam nulla officia voluptatibus error corrupti!</p>
-      </div>
-      <div class="card">
-        <h3>Certifications</h3>
-       <p> Lorem ipsum dolor sit amet consectetur 
-        adipisicing elit. Velit accusamus ipsam omnis obcaecati perspiciatis aperiam nulla officia voluptatibus error corrupti!</p>
-      </div>
+    <div class="container">
+  
+    <div class="card">
+      
+      <h2>Card 1</h2>
+      <p>This is the first impressive card.</p>
     </div>
+   
+    <div class="card">
+      
+      <h2>Card 2</h2>
+      <p>This is the second impressive card.</p>
+    </div>
+    
+    <div class="card">
+      
+      <h2>Card 3</h2>
+      <p>This is the third impressive card.</p>
+    </div>
+  </div> 
 </body>
 </html>

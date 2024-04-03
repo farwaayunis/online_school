@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1about-teachers.css">
     <title>Document</title>
 </head>
 <body>
@@ -14,8 +15,8 @@
           <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
           <nav class="nav-links">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="about.html">About</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href='#about'>About</a></li>
               <li><a href="services.html">Services</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -43,10 +44,11 @@
     </header>
 
     <main>
+      <section id="home">
       <div class="banner">
 
         <img src="images/landing_page.jpg"  alt="" srcset=""  >
-     
+     <div class="color-overlay"></div>
         
 
       </div>
@@ -54,7 +56,7 @@
       <h1 >Your Heading</h1>
       <p>Lorem ipsum dolor, sit amet consectetur
            adipisicing elit. Placeat distinctio nobis cum ut at corrupti quae adipisci animi dicta similique.</p>
-      <a href="#" class="discover-button" onmouseover="runTransition()"  id="">Discover More</a></div>
+      <a href="#" class="discover-button"  id=""> <span class="rubber-band-text">Discover More </span></a></div>
      <script>function runTransition() {
         var button = document.querySelector('.discover-button');
         button.classList.add('animate-once');
@@ -72,7 +74,7 @@
     <div class="container">
   
     <div class="card">
-      <img src="images/icon1.PNG" height="40" width="40" alt="" srcset="">
+      <img src="images/icon3.PNG" height="40" width="40"style="border-radius: 90px; " alt="" srcset="">
       <h2>Trending Courses</h2>
       <p>Lorem ipsum dolor sit amet 
         
@@ -80,18 +82,45 @@
     </div>
    
     <div class="card">
-      <img src="images/icon2.PNG" height="40" width="40" alt="" srcset="">
+      <img src="images/icon2.PNG" height="40"style="border-radius: 90px;" width="40" alt="" srcset="">
       <h2>Free trials</h2>
       <p>Lorem, ipsum dolor sit amet 
         consectetur adipisicing elit. Rem modi aliquam architecto sapiente sequi exercitationem doloremque dolor, voluptatibus adipisci at.</p>
     </div>
     
     <div class="card">
-      <img src="images/icon3.PNG" height="40" width="40"fg alt="" srcset="">
+      <img src="images/icon1.PNG" height="40" style="border-radius: 90px;" width="40"fg alt="" srcset="">
       <h2>Certifications</h2>
       <p>Lorem ipsum dolor
          sit amet, consectetur adipisicing elit. Nisi architecto id numquam itaque nostrum distinctio natus magnam quisquam ipsa tempore?</p>
     </div>
   </div> 
+</section>
+
+                                                  <!--ABOUT-->
+
+
+<section id="about">
+   <div class="about-heading">
+    <h1>About</h1>
+    <p>Start your journey with us</p>
+   </div> 
+
+   <div class="about-flex-div">
+   <div class="about-para">
+    <h1>Start your journey to start a better life With our Practical courses</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquid nihil iusto voluptatibus, 
+      nulla amet modi possimus quibusdam doloremque 
+      aut harum sequi labore officiis quia praesentium 
+      incidunt debitis eos sapiente.</p>
+      <button class="discover-button"> <span class="rubber-band-text">Learn More</span></button>
+   </div>
+   <div class="about-img"><img src="images/Education-rafiki.png" style ='border: 20px groove black; /* Adjust the width and style of the groove border */
+    padding: 20px; /* Add padding to the element to create space for the border */
+    background-color: gold; margin-right: 20px;' height="700" width="700" alt="" srcset=""></div>
+
+  </div>
+</section>
+
 </body>
 </html>

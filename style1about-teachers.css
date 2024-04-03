@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Outfit;
+    src: url('/fonts/outfit/Outfit-VariableFont_wght.ttf')
+  }
+  @font-face{
+    font-family:figtree;
+    src:url('/fonts/young-serif/YoungSerif-Regular.ttf');
+  }
+
+  .about-flex-div{
+    display: flex;
+    -ms-flex-wrap: wrap;
+  }
+
+.about-heading{
+    text-align:center;
+    font-family: Outfit,sans-serif;
+
+}
+.about-heading h1{
+   
+    font-size:30px;
+
+}
+.about-heading p{
+    color: rgb(183, 181, 181);
+}
+.about-para{
+    font-family: Outfit,sans-serif;
+    margin: 70px 70px ;
+}
+.about-para h1{
+    color: gold;
+    font-size: 25px;
+
+}
+.about-para p{
+    font-size: 20px;
+    color:rgb(183, 181, 181);
+}

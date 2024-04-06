@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-NMWaZJQxx4sC3MR5Pfj3+nVpNfNS8RUxGHSXxmIGjZG2oNzRgm/IeVwNsbx20/sCjHUVtDmeY8wKlQz0AWY/3w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style2-courses-contact.css">
+    <title>Document</title>
+ 
+
+</head>
+<body>
+    <section id="courses">
+<div class="course-heading">
+<h1>Popular Courses</h1>
+<p>Upgrade your skills with new courses</p>
+</div>
+
+
+    <div class="course-container">
+    
+        <div class="course-card" onmouseover="changeHeadingColor(this)" onmouseout="restoreHeadingColor(this)">
+          <h2>HTML5</h2>
+          <p>Description of course 1 Lorem ipsum dolor sit amet consectetur
+             adipisicing elit. Ea obcaecati quibusdam commodi repudiandae expedita, nihil ratione eveniet vel delectus eaque.</p>
+        </div>
+        <div class="course-card" onmouseover="changeHeadingColor(this)" onmouseout="restoreHeadingColor(this)">
+          <h2>CSS3</h2>
+          <p>Description of course  2 Lorem ipsum dolor, sit amet consectetur
+             adipisicing elit. Ea, et doloremque illum provident asperiores quasi? Officiis aliquam exercitationem nostrum maxime.</p>
+        </div>
+        <div class="course-card" onmouseover="changeHeadingColor(this)" onmouseout="restoreHeadingColor(this)">
+          <h2>Javascript</h2>
+          <p>Description of course3 Lorem ipsum dolor 
+            sit amet consectetur adipisicing elit. Ipsum unde quasi nihil blanditiis natus repudiandae eum doloribus neque quae quaerat.</p>
+        </div>
+        <div class="course-card" onmouseover="changeHeadingColor(this)" onmouseout="restoreHeadingColor(this)">
+          <h2>Web Development</h2>
+          <p>Description of course 4 Lorem ipsum dolor sit,
+             amet consectetur adipisicing elit. Labore est autem aspernatur ratione molestiae id commodi quasi dolores maxime nisi!</p>
+        </div>
+        <div class="course-card" onmouseover="changeHeadingColor(this)" onmouseout="restoreHeadingColor(this)">
+          <h2>SEO Marketing</h2>
+          <p>Description of course 5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum omnis debitis dolorem nemo maxime unde numquam minima impedit atque nesciunt.</p>
+        </div>
+        <div class="course-card" onmouseover="changeHeadingColor(this)" onmouseout="restoreHeadingColor(this)">
+          <h2>Graphic Designing</h2>
+          <p>Description of course 6 Lorem ipsum dolor sit amet, 
+            consectetur adipisicing elit. Debitis quisquam eveniet officiis explicabo sint numquam distinctio nihil fugiat. Modi, sunt?</p>
+        </div>
+      </div>
+      
+      <script>
+      function changeHeadingColor(card) {
+        var heading = card.querySelector('h2');
+        heading.style.color = 'gold';
+      }
+      
+      function restoreHeadingColor(card) {
+        var heading = card.querySelector('h2');
+        heading.style.color = '#333';
+      }
+      </script>
+ 
+
+    </section>
+    
+</body>
+</html>

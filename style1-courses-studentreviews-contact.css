@@ -1,0 +1,201 @@
+
+@font-face {
+    font-family: Outfit;
+    src: url('/fonts/outfit/Outfit-VariableFont_wght.ttf')
+  }
+  @font-face{
+    font-family:figtree;
+    src:url('/fonts/young-serif/YoungSerif-Regular.ttf');
+  }
+  /*Popular Courses*/
+
+  .course-heading{text-align: center;
+    font-family: Outfit,sans-serif;
+    margin-bottom: 20px;
+    color: gold;}
+    
+
+.course-container {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .course-container h1,
+  .course-container h2,
+  course-container h3{font-family: outfit,sans-serif;}
+  
+  .course-container p{
+      font-family: figtree,sans-serif;
+  }
+  .course-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+   
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  }
+
+  .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(255, 215, 0, 0.2);
+    background-color: rgb(232, 231, 231);
+    color: gold;
+  }
+
+  /* Styling for headings */
+  .course-card h2 {
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1)
+  }
+
+  /* Example styling for description */
+  .course-card p {
+    color: #666;
+  }
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .course-container {
+      grid-template-columns: repeat(2, 1fr); /* Set grid columns to 2 */
+      justify-content: center; /* Center content */
+    }
+  } 
+
+/*Student Reviews*/
+  .review-section {
+    font-family: Outfit;
+   background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+  }
+
+  .review-card {
+    background-color: rgba(255, 215, 0, 0.3); /* Gold color with opacity */
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .student-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 auto 10px;
+  }
+
+  .student-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .student-paragraph {
+    margin-bottom: 20px;
+  }
+
+  .rating-stars {
+    color: gold;
+    font-size: 24px;
+  }
+
+  .review-heading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    font-family: Outfit, sans-serif;
+
+  }
+
+  .section-heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: gold;
+    font-family: Outfit,sans-serif;
+  }
+
+  .section-paragraph {
+    font-family: Outfit,sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+
+  }
+
+  /*COntact Form*/
+
+#contact {
+  background-color: black;
+  color: white;
+  padding: 50px;
+}
+
+.contact-form {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+
+
+.input-group input[type="text"],
+.input-group input[type="number"],
+.input-group input[type="email"],
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family:Outfit,sans-serif;
+}
+
+.input-group textarea {
+  height: 100px;
+}
+
+.input-group input[type="submit"] {
+  background-color:gold;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-group input[type="submit"]:hover {
+  background-color: goldenrod;
+}
+
+#contact{
+    display: flex;
+    
+}
+@media screen and (max-width:768px) {
+   #contact{flex-direction:column; }
+   .contact-form{max-width: 100vw;}
+    
+}

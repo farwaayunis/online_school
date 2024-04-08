@@ -157,12 +157,18 @@
   margin-bottom: 30px;color: gold;
 }
 
+.contact-heading {
+  font-family:Outfit,sans-serif;
+  font-size: 35px;
+  margin-bottom: 30px;
+  color: gold;
+}
+
 .contact-form {
   width: 400px;
   margin: 0 auto;
   margin-top: 90px;
 }
-
 .input-group {
   margin-bottom: 20px;
 }
